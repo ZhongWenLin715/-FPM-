@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+".\main.o"
+".\stm32f10x_it.o"
+".\system_stm32f10x.o"
+".\core_cm3.o"
+".\startup_stm32f10x_hd.o"
+".\misc.o"
+".\stm32f10x_gpio.o"
+".\stm32f10x_spi.o"
+".\stm32f10x_usart.o"
+".\stm32f10x_tim.o"
+".\stm32f10x_rcc.o"
+".\delay.o"
+".\sys.o"
+".\usart.o"
+".\bf5325a.o"
+".\key.o"
+".\led.o"
+".\timer.o"
+".\lq12864.o"
+".\ui.o"
+--strict --scatter ".\smart_lock.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\smart_lock.map" -o .\smart_lock.axf
